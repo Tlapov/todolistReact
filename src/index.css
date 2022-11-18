@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.3s;
+}
+body{
+  background:linear-gradient(45deg, rgb(44, 195, 44), rgb(97, 97, 198));
+  font-size: 20px;
+  font-weight: 400;
+  
+}
+.app{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+h1{
+  width: 60%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.5rem;
+  border-bottom: 2px solid rebeccapurple;
+  letter-spacing: 2px;
+  color: white;
+  text-shadow: 0.5rem -0.7rem 0.3rem rgb(198, 190, 190);
+}
+main{
+  width: 35rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem;
+  row-gap: 1.5rem;
+  background-color: whitesmoke;
+  border-radius: 7px;
+  box-shadow: 3px 3px 10px whitesmoke;
+}
+main header{
+  width: 100%;
+  height: 3.5rem;
+}
+main header input{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(54, 45, 45);
+  color: white;
+  border-radius: 7px;
+  border: 1px solid rebeccapurple;
+  text-align: center;
+  font-size: 1rem;
+}
+main header input::placeholder{
+  font-size: 1rem;
+  color: white;
+}
+main section{
+    width: 100%;
+}
+main section h3{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+main section .input-add{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+.input-add input{
+  width: calc(100% - 2rem);
+  padding: 0.7rem 0.4rem;
+  border-radius: 7px;
+  border: 1px solid rebeccapurple;
+  font-size: 1rem;
+  color: black;
+}
+.input-add input::placeholder{
+  color: black;
+}
+.input-add button{
+  font-size: 1.5rem;
+  color:rebeccapurple;
+  cursor: pointer;
+}
+main ul{
+  margin-top: 1rem;
+  max-height: 250px;
+  overflow: auto;
+}
+main ul p{
+  text-align: center;
+  background-color: rebeccapurple;
+  padding: 1rem;
+  border-radius: 7px;
+}
+main ul li{
+  margin-bottom: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rebeccapurple;
+  padding: 0.6rem;
+  border-radius: 7px;
+  color: white;
+}
+main ul li input[type="checkbox"]{
+  appearance: none;
+  -webkit-appearance: none;
+  height: 2rem;
+  width: 2rem;
+  padding: 0 0.5rem;
+  border-radius: 50%;
+  background-color: rgb(187, 175, 175);
+  cursor: pointer;
+  position: relative;
+}
+input[type="checkbox"]:hover{
+  background-color: rgb(90, 88, 88);
+}
+main ul li input[type="checkbox"]::after{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.3rem;
+  content: '\f00c';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:rebeccapurple;
+  display: none;
+}
+input[type="checkbox"]:checked{
+  background-color: green;
+}
+input[type="checkbox"]:checked::after{
+  display: block;
+}
+main ul li label{
+  width: 100%;
+  margin: 0 0.8rem;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+main ul li small{
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+}
+main ul li small:hover{
+  color: black;
+}
+main .footer p{
+  font-size: 1rem;
+}
+main .footer p b{
+  font-size: 1.3rem;
+  color:rebeccapurple;
+}
+footer{
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
+footer h2{
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+footer h2 span{
+  font-weight: 900;
+  font-size: 1.5rem;
+}
